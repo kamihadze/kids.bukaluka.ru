@@ -1,0 +1,26 @@
+:root {
+  --font: 'Space Grotesk', system-ui, sans-serif;
+  --font-display: 'Unbounded', system-ui, sans-serif;
+  --c-coral: #FF6B6B;
+  --c-coral-dark: #E55555;
+  --c-yellow: #FFE66D;
+  --c-yellow-dark: #F5D440;
+  --c-teal: #4ECDC4;
+  --c-teal-dark: #3BB8B0;
+  --c-purple: #A855F7;
+  --c-purple-dark: #9333EA;
+  --c-blue: #60A5FA;
+  --c-dark: #1A1A2E;
+  --c-text: #555566;
+  --c-text-light: #222233;
+  --c-bg: #FFFFFF;
+  --c-bg-warm: #FFF9F0;
+  --c-bg-cool: #F0F4FF;
+  --c-bg-mint: #F0FBF9;
+  --c-bg-lavender: #F5F0FF;
+  --c-border: #E8E8F0;
+  --radius: 1.25rem;
+  --radius-lg: 2rem;
+  --container: 1200px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}

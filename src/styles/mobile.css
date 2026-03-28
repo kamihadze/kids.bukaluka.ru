@@ -1,0 +1,100 @@
+@media (max-width: 1024px) {
+  .hero-line { font-size: 3.5rem; }
+  .effective h2, .included h2 { font-size: 3rem; }
+  .helpers h2 { font-size: 2.75rem; }
+  .pricing h2 { font-size: 2.75rem; }
+
+  .hero-characters { width: 380px; height: 380px; }
+  .hero-char--dragon { width: 200px; }
+  .hero-char--unicorn { width: 130px; }
+  .hero-char--owl { width: 80px; }
+  .hero-char--book { width: 130px; }
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .mobile-menu-btn { display: block; }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .hero-line { font-size: 2.5rem; }
+
+  .hero-content {
+    padding: 7rem 2rem 4rem;
+    flex-direction: column;
+  }
+
+  .hero-characters {
+    width: 100%;
+    max-width: 320px;
+    height: 280px;
+    margin: 0 auto;
+  }
+
+  .hero-char--dragon { width: 160px; }
+  .hero-char--unicorn { width: 110px; }
+  .hero-char--owl { width: 70px; }
+  .hero-char--book { width: 110px; }
+
+  .hero {
+    min-height: auto;
+    padding-bottom: 6rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .helpers-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+
+  .helpers-visual {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .effective-grid { grid-template-columns: 1fr; }
+  .effective h2, .helpers h2 { font-size: 2.5rem; }
+
+  .included-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .included h2 { font-size: 2.5rem; }
+  .included-decor { width: 200px; }
+
+  .pricing-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .pricing h2 { font-size: 2.5rem; }
+
+  .pricing-card { flex-direction: column; }
+  .pricing-separator { width: 100%; height: 2px; }
+  .pricing-decor { width: 80px; top: -40px; right: -10px; }
+
+  section { padding: 5rem 0 7rem; }
+
+  .footer-top { flex-direction: column; align-items: flex-start; }
+  .footer-bottom { flex-direction: column; gap: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-line { font-size: 2rem; }
+  .effective h2, .helpers h2, .included h2, .pricing h2 { font-size: 2rem; }
+  .btn-primary { width: 100%; }
+
+  .hero-characters { height: 220px; }
+  .hero-char--dragon { width: 120px; }
+  .hero-char--unicorn { width: 90px; }
+  .hero-char--owl { width: 55px; }
+  .hero-char--book { width: 90px; }
+}

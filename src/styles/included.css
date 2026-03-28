@@ -1,0 +1,127 @@
+.included {
+  background: var(--c-bg);
+  padding: 8rem 0 10rem;
+}
+
+.included .tag {
+  color: var(--c-purple-dark);
+  border-color: var(--c-purple);
+}
+
+.included h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.included-desc {
+  font-size: 1.1rem;
+  color: var(--c-text);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.included-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.included-decor {
+  width: 280px;
+  margin-top: 1rem;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.1));
+  cursor: pointer;
+  transition: scale 0.3s ease;
+}
+
+.included-decor:hover {
+  scale: 1.12;
+}
+
+.included-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.included-item {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 2rem;
+  background: var(--c-bg-warm);
+  border-left: 4px solid var(--c-purple);
+  transition: transform 0.2s;
+}
+
+.included-item:hover {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+.included-item:nth-child(2) { border-left-color: var(--c-teal); }
+.included-item:nth-child(3) { border-left-color: var(--c-yellow-dark); }
+
+.included-number {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--c-purple);
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 4.5rem;
+}
+
+.included-item:nth-child(2) .included-number { color: var(--c-teal-dark); }
+.included-item:nth-child(3) .included-number { color: var(--c-yellow-dark); }
+
+.included-info h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.included-info p {
+  font-size: 0.9rem;
+  color: var(--c-text);
+}
+
+.included-bottom {
+  margin-top: 0.5rem;
+}
+
+.included-audiences {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.included-audience {
+  padding: 1.5rem;
+  background: var(--c-bg-lavender);
+  border-top: 3px solid var(--c-purple);
+  transition: transform 0.2s;
+}
+
+.included-audience:last-child {
+  border-top-color: var(--c-teal);
+}
+
+.included-audience:hover {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+.included-audience h4 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--c-text-light);
+  margin-bottom: 0.5rem;
+}
+
+.included-audience p {
+  font-size: 0.85rem;
+  color: var(--c-text);
+  line-height: 1.6;
+}

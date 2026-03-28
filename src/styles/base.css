@@ -1,0 +1,89 @@
+body {
+  font-family: var(--font);
+  color: var(--c-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background: var(--c-bg);
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+  color: var(--c-text-light);
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border: 2px solid currentColor;
+  border-radius: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.5rem;
+  transform: rotate(-2deg);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1rem 2.5rem;
+  background: var(--c-coral);
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  clip-path: polygon(0 0, 100% 4%, 98% 100%, 2% 96%);
+}
+
+.btn-primary:hover {
+  transform: scale(1.05) rotate(-1deg);
+  background: var(--c-coral-dark);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.section-divider {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 5;
+}
+
+.divider-1 {
+  background: var(--c-bg-cool);
+  clip-path: polygon(0 60%, 15% 20%, 35% 70%, 55% 10%, 75% 55%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.divider-2 {
+  background: var(--c-bg);
+  clip-path: polygon(0 0%, 20% 60%, 45% 15%, 65% 50%, 85% 5%, 100% 40%, 100% 100%, 0% 100%);
+}
+
+.divider-3 {
+  background: var(--c-bg-lavender);
+  clip-path: polygon(0 40%, 10% 0%, 30% 55%, 50% 10%, 70% 60%, 90% 20%, 100% 50%, 100% 100%, 0% 100%);
+}

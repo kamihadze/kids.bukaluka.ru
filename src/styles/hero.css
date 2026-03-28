@@ -1,0 +1,141 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: var(--c-bg-warm);
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 10rem 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 750px;
+}
+
+.hero h1 {
+  margin-bottom: 2rem;
+}
+
+.hero-line {
+  display: block;
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--c-text-light);
+}
+
+.hero-line.accent {
+  color: var(--c-coral);
+  transform: rotate(-2deg);
+  display: inline-block;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--c-text);
+  margin-bottom: 2.5rem;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-stat {
+  font-size: 0.9rem;
+  color: var(--c-text);
+}
+
+.hero-stat span {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--c-teal-dark);
+}
+
+.hero-characters {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-char-wrap {
+  position: absolute;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.hero-char-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
+  transition: filter 0.3s, scale 0.3s ease;
+  pointer-events: none;
+}
+
+.hero-char-wrap:hover img {
+  filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.18));
+  scale: 1.12;
+}
+
+.hero-char-wrap.hero-char--dragon {
+  width: clamp(200px, 16vw, 400px);
+  top: 10%;
+  right: 4%;
+}
+
+.hero-char-wrap.hero-char--owl {
+  width: clamp(90px, 7.5vw, 200px);
+  top: 15%;
+  left: 6%;
+}
+
+.hero-char-wrap.hero-char--book {
+  width: clamp(130px, 11vw, 280px);
+  bottom: 15%;
+  left: 8%;
+}
+
+.hero-char-wrap.hero-char--unicorn {
+  width: clamp(140px, 11.5vw, 300px);
+  bottom: 12%;
+  right: 6%;
+}
+
+.hero-zigzag {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: var(--c-bg);
+  clip-path: polygon(0 70%, 8% 30%, 18% 80%, 28% 20%, 40% 65%, 52% 10%, 62% 55%, 74% 5%, 86% 60%, 100% 25%, 100% 100%, 0% 100%);
+  z-index: 5;
+}
