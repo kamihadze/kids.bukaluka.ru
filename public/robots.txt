@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+
+Sitemap: https://kids.bukaluka.ru/sitemap.xml
+Host: https://kids.bukaluka.ru
